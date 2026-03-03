@@ -20,7 +20,7 @@ export function Home() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
           >
-            Bienvenue à l'École Communautaire de l'Enseignement Supérieur
+            Bienvenue à l'École Communautaire de l'Enseignement Supérieur!
           </motion.h1>
 
           <motion.p
