@@ -1,49 +1,58 @@
 # CoursEces Project
 
-This is a React application using Vite and Supabase for authentication and course management.
+Ce dépôt contient une application React créée avec Vite. L’accès aux données est géré
+via une base de données et les paramètres de connexion sont fournis par des
+variables d’environnement. Ci‑dessous se trouvent les étapes à suivre pour installer
+et lancer le projet sur votre machine locale.
 
-## Structure
+## Prérequis
 
-- `src/`
-  - `components/` - shared UI components (Navbar, Link, etc.)
-  - `contexts/` - React context (AuthContext for authentication state)
-  - `lib/` - Supabase client initialization
-  - `pages/` - application pages (Home, Admin, Courses, TeacherDashboard, TeacherLogin)
+- Node.js (version 14 ou supérieure)
+- npm 
 
-## Setup
+## Installation locale
 
-1. **Install dependencies**
+1. **Cloner le dépôt**
+   ```bash
+   git clone https://github.com/<votre‑organisation>/<nom‑du‑repo>.git
+   cd project
+   ```
+
+2. **Installer les dépendances**
    ```bash
    npm install
    ```
-2. **Configure Supabase**
-   - Create a project on [Supabase](https://supabase.com)
-   - Add credentials to `.env` file (e.g. `VITE_SUPABASE_URL` and `VITE_SUPABASE_ANON_KEY`)
-   - Use `supabase-setup.sql` to initialize database tables and roles.
 
-3. **Run development server**
+3. **Configuration locale**
+   - Créez un fichier `.env` à la racine du projet
+
+   - Le fichier `.env` doit contenir les paramètres de connexion à la base de données :
+     ```text
+     VITE_SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJ5dWRycHpnaWFtcmR3cmVxbXJuIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjE0MDg5MjgsImV4cCI6MjA3Njk4NDkyOH0.Z30RejoPxb94O3-_Or7Sz5mKaVxLYAvu6k2ZZZQAMuI
+
+     VITE_SUPABASE_URL=https://ryudrpzgiamrdwreqmrn.supabase.co
+     ```
+   
+
+4. **Lancer le serveur de développement**
    ```bash
    npm run dev
    ```
+   Le site sera disponible sur `http://localhost:5173` par défaut.
 
-## Usage
+## Exécution supplémentaire
 
-- Visitors can view the home page and course listings.
-- Teachers can log in via the teacher login page.
-- Once authenticated, teachers access the Teacher Dashboard to manage courses.
-- The Admin page is for administrative features (requires appropriate permissions).
+- Pour compiler en production : `npm run build`
+- Pour mettre à jour les dépendances : `npm install`
 
-## Build
+## Structure du projet
 
-To build for production:
-```bash
-npm run build
-```
+Le répertoire `src/` contient les composants React (`components/`), les contextes
+(`contexts/`), la configuration Supabase (`lib/supabase.ts`) et les pages
+(`pages/`). Les fichiers de configuration typique de Vite, Tailwind et ESLint sont
+déjà en place.
 
-## Notes
+----
 
-- Tailwind CSS is configured via `tailwind.config.js` and `postcss.config.js`.
-- ESLint is set up via `eslint.config.js`.
-- Typescript configurations exist in `tsconfig*.json` files.
-
-For additional information, refer to the project documentation or contact the maintainer.
+N’hésitez pas à contacter le mainteneur (Nachito)  si vous rencontrez des problèmes ou avez des
+questions.
