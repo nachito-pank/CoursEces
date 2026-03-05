@@ -14,7 +14,7 @@ et lancer le projet sur votre machine locale.
 
 1. **Cloner le dépôt**
    ```bash
-   git clone https://github.com/<votre‑organisation>/<nom‑du‑repo>.git
+   git clone https://github.com/nachito-pank/CoursEces.git
    cd project
    ```
 
