@@ -36,7 +36,7 @@ export function Navbar({ currentPath }: NavbarProps) {
             className="flex items-center space-x-2 sm:space-x-3 font-bold text-lg sm:text-xl text-slate-900"
           >
             <img
-              src="https://github.com/nachito-pank/cours-eces/blob/main/eces%20logo.jpg?raw=true"
+              src="https://github.com/nachito-pank/cours-eces/blob/main/public/Logo/logo.jpg"
               alt="Logo"
               className="w-8 h-8 sm:w-10 sm:h-10 rounded-full object-cover"
             />

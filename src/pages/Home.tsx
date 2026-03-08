@@ -46,7 +46,7 @@ export function Home() {
         >
           <div className="led-border aspect-square">
             <img
-              src="https://github.com/nachito-pank/cours-eces/blob/main/eces%20logo.jpg?raw=true"
+              src="https://github.com/nachito-pank/cours-eces/blob/main/public/Logo/logo.jpg"
               alt="École de l'Excellence"
               className="object-cover w-full h-full"
             />
